@@ -1,0 +1,108 @@
+   <div class="wrapper-photo">
+
+
+
+
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/rostov.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+        <div class="wrapper-photo_family"></div>
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        <div class="wrapper-photo_capture">
+            <img class="wrapper-photo_image" src="image/capture.jpg">
+        </div>
+        </div>
+        <button class="wrapper__button">Показать еще</button>
+    </div>
+
+
+
+</div>
+<footer>
+</footer>
+
+<script src="js/jquery-1.12.0.min.js"></script>
+<script>
+    var url = "image/capture.jpg";
+    $(document).ready(function() {
+        $(".wrapper__button").click(function () {
+            for(i=0;i<=11;i++){
+                addPhoto(url);
+            }
+
+        })
+
+    });
+    function addPhoto(url) {
+        var template = '<div class="wrapper-photo_capture">' +
+                '<img class="wrapper-photo_image" src='+url+'>' +
+                '</div>'
+        $('.wrapper-photo').append(template);
+    }
+</script>
+</body>
+</html>

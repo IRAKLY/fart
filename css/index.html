@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Instagram</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header flex-header">
+		<div class="logo" title="Логотип">
+			<img class="logo_inst" src="images/logo.png">
+		</div>
+		<div class="icon">
+			<img class="icon_profile" src="images/icon.jpg">
+		</div>
+	</header>
+	<div class="wrapper flex-wrapper">
+		<div class="content flex-content">
+			<div class="form">
+				<button type="button" class="button_upload">UPLOAD PHOTO</button>
+				<input type="search" class="search" placeholder="Search Photos">
+				<a class="sort_all"    href="">All</a>
+				<a class="sort_photos" href="">Photos</a>
+				<a class="sort_videos" href="">Videos</a>
+				<a class="sort_cell"   href=""><img class="badge_icon" src="images/badge.png"></a>
+				<a class="sort_list"   href=""><img class="list_icon"src="images/list.png"></a>
+			</div>
+			<div class="photos">
+							
+				<div class="otstup"><img class="photo" src="images/1.jpg"></div>
+				<div class="otstup"><img class="photo" src="images/2.jpg"></div>
+				<div class="otstup"><img class="photo" src="images/3.jpg"></div>
+				<div class="otstup"><img class="photo" src="images/4.jpg"></div>
+				<div class="otstup"><img class="photo" src="images/5.jpg"></div>
+				<div class="otstup"><img class="photo" src="images/6.jpg"></div>
+				<div class="otstup"><img class="photo" src="images/7.jpg"></div>
+				<div class="otstup"><img class="photo" src="images/8.jpg"></div>
+				<div class="otstup"><img class="photo" src="images/9.jpg"></div>
+
+			</div>
+			<div class="over_footer">
+				<div class="down"></div>
+			</div>
+		</div>
+		<div class="profile flex-profile">
+			<div class="icon_text">
+				<img class="icon_not" src="images/icon.jpg">
+				<p class="text_about">About Me</p>
+			</div>
+			<div class="icon_profile_big">
+				<img class="icon_big" src="images/1.jpg">
+				
+			</div>
+			<p class="nickname">White Mister</p>
+			<p class="email">@WhiteMister96</p>
+			<p class="description">
+				Founding partner and Creative Director<br> 
+				at Sterling Cooper Draper Pryce<br>
+				Advertising Agency in Manhattan, NY.
+			</p>
+			<p class="site">www.dondraper.com</p>
+			<div class="posts">
+				<h1 class="number">312</h1>
+				<p class="section">Posts</p>
+			</div>
+			<div class="followers">
+				<h1 class="number">1.2K</h1>
+				<p class="section">Followers</p>
+				<img class="icon_strel" src="images/strel.png">
+			</div>
+			<div class="following">
+				<h1 class="number">65</h1>
+				<p class="section">Following</p>
+				<img class="icon_strel" src="images/strel.png">
+			</div>
+			<button type="button" class="button_edit">Edit Profile</button>
+		</div>
+	</div>
+	<!--<footer class="footer">
+		<a class="" href="https://vk.com/id128097370">
+			<img class="my_site" title="Моя Страничка в вконтактике" src="images/vk.png">
+		</a>
+		<!--<div class="example_eee">
+			<Img class="example1" src="images/11.jpg"></div>>
+		<div class="example_eee">
+			<Img class="example1" src="images/12.jpg">
+		</div>
+	</footer>-->
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+    var url = "images/1.jpg";
+    $(document).ready(function() {
+        $(".button_edit").click(function () {
+            for(i=0;i<=11;i++){
+                addPhoto(url);
+            }
+
+        })
+
+    });
+    function addPhoto(url) {
+        var template = '<div class="otstup">' +
+				'<img class="photo" src='+url+'>'
+                 +
+                '</div>'
+        $('.photos').append(template);
+    }
+</script>
+</body>
+</html>
